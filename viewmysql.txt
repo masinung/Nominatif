@@ -1,0 +1,4 @@
+CREATE VIEW `tv1` 
+AS SELECT suara_1,suara_2,suara_sah,suara_tdk_sah,suara_dpt,suara_dpt_hadir,user_name,tps_kec,tps_kel,tps_no 
+FROM suara,user,tps 
+WHERE suara.user_id = user.user_id AND user.tps_id=tps.tps_id
